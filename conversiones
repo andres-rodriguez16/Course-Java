@@ -1,0 +1,18 @@
+.::Conversión Automatica::.
+byte -> short
+short -> int
+char -> int
+int -> long
+long -> float
+float -> double
+
+.::Cast Necesario::.
+double -> float
+float -> long
+long -> int
+int -> short
+short -> byte
+
+char <-> byte
+char <-> sh
+int -> char
