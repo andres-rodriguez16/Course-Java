@@ -5,11 +5,14 @@ public class funtions {
         System.out.println( "el area de un cuadrado es " + cuadradoArea(y));
         // area de una esfera
         System.out.println( "el area de una esfera es " + esferaArea(y));
-        // circiloArea
+        // circuloArea
         System.out.println("el area de un circulo es " + circuleArea(y));
-        System.out.println(covertToDolar("COP", 8000));
+        System.out.println(covertToDollar("COP", 8000));
+
     }
+
     public static double circuleArea( double r) {
+
         return Math.PI * Math.pow(r, 2);
     }
     public static double cuadradoArea( double r) {
@@ -18,7 +21,13 @@ public class funtions {
     public static double esferaArea(double r) {
         return 4 * Math.PI * Math.pow(r, 2);
     }
-    public static int covertToDolar (String currency, int quantity) {
+    /**
+     * Esta funciona especificando su moneda convierte una catidad de dinero a dolares
+     * @param quantity cantidad de dinero
+     * @param currency Tipo de moneda: solo acepta MX o COP
+     * @return quantity cantidad actualizado en dolares
+     * */
+    public static int covertToDollar (String currency, int quantity) {
         switch (currency) {
             case "COP":
                  quantity = (int) ((double) quantity * 0.00025);
